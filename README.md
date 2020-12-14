@@ -6,7 +6,5 @@ $ git clone https://github.com/denisesleite/react-films.git
 Instalar suas dependências:<br/>
 $ npm install ou yarn 
 
-<br/><br/>
-
 Executar o projeto:<br/>
 $ yarn start ou npm start
