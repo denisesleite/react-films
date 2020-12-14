@@ -10,3 +10,5 @@ Executar o projeto:<br/>
 $ yarn start ou npm start
 
 Na tela inicial de login "fake", aceita-se qualquer informação para avançar para a próxima tela.
+
+Deploy: https://react-films.vercel.app
