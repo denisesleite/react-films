@@ -1,6 +1,7 @@
 body{
   font-family: 'Heebo', sans-serif;
   background: #25272b;
+  overflow: inherit;
 }
 
 .list__films{
