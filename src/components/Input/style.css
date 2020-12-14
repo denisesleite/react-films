@@ -1,0 +1,29 @@
+.input-form{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.input-form input{
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #e2e2e2;
+  color: #e2e2e2;
+  padding: 3px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.input-form input:focus ~ label, 
+.upLabel{
+  transform: translateY(-18px) scale(0.8);
+}
+
+.input-form label{
+  position: absolute;
+  left: 4px;
+  color: #e2e2e2;
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  transform-origin: 0 100%;
+  transition: all .3s ease;
+}
