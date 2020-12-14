@@ -36,7 +36,6 @@ export const Home = () => {
     api.get("/films/").then(response => {
       setMovies(response.data.results);
       setFilter(response.data.results);
-      console.log(response.data);
     });
   }, []);
 
