@@ -9,4 +9,4 @@ $ npm install ou yarn
 Executar o projeto:<br/>
 $ yarn start ou npm start
 
-Na tela inicial de login, aceita-se qualquer informação para avançar para a próxima tela.
+Na tela inicial de login "fake", aceita-se qualquer informação para avançar para a próxima tela.
