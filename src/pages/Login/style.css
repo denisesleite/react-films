@@ -1,9 +1,12 @@
+body{
+  overflow: hidden;
+}
+
 .home__gallery{
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   min-height: 100vh;
   column-gap: 3px;
-  /* grid-template-rows: 230px 350px 300px; */
 }
 
 .home__gallery .home__gallery-item img{
