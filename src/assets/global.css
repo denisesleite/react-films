@@ -9,7 +9,7 @@ body{
   margin: 0;
 }
 
-p, span {
+p, span, label {
   font-size: 14px;
 }
 

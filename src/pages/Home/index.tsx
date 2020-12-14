@@ -12,26 +12,25 @@ import { Modal } from '../../components/Modal';
 import './style.css';
 
 export interface PropsMovies{
-  // characters: [];
   director: string;
   episode_id: number;
   opening_crawl: string;
-  // planets: [];
   producer: string;
   release_date: string;
-  // species: [];
-  // starships: [];
   title: string;
   url: string;
-  // vehicles: [];
 }
 
-export const Home = ({director, episode_id, opening_crawl, producer, release_date, title, url}: PropsMovies) => {
+export const Home = () => {
   const [movies, setMovies] = useState<PropsMovies[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<PropsMovies[]>([]);
   const [filter, setFilter] = useState([]);
   const [value, setValue] = useState('');
   const [modal, setModal] = useState(false);
+
+  const searchLabel = document.querySelector('#searchLabel');
+
+  value !== '' ? searchLabel?.classList.add('upLabel') : searchLabel?.classList.remove('upLabel') 
 
   useEffect(() => {
     api.get("/films/").then(response => {
@@ -95,7 +94,7 @@ export const Home = ({director, episode_id, opening_crawl, producer, release_dat
                 title="Image Movie"
                 sizeImage="140px"
               />
-              <div className="list__films-item-description" key={title}>
+              <div className="list__films-item-description" key={movie.title}>
                 <h3>{movie.title}</h3>
                 <p>{movie.opening_crawl.length > 30 ? movie.opening_crawl.substr(0, 120) + '...' : movie.opening_crawl}</p>
                 <span>
@@ -122,7 +121,6 @@ export const Home = ({director, episode_id, opening_crawl, producer, release_dat
           color="#363636"
         />
       </Modal>
-
     </div>
   )
 }
