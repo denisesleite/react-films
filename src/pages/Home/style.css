@@ -132,10 +132,11 @@ body{
   .list__films main .list__films-box .list__films-item{
     width: 75%;
     flex-direction: column;
+    margin-right: 0;
   }
 
   .list__films main .list__films-box .list__films-item:hover{
-    transform: translate(0);
+    transform: translate(0) !important;
   }
 
   .list__films main .list__films-box .list__films-item .image{
